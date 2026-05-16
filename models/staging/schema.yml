@@ -1,0 +1,9 @@
+version: 2
+sources:
+    - name: datafeed_schema
+      database: "{{('di_sales')}}"
+      schema: raw_schema
+      tables:
+       - name: raw_customer
+
+       - name: raw_order
