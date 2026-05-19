@@ -1,6 +1,7 @@
 {{ config(
 materialized="incremental",
-unique_key ='id',
+unique_key = ['id','name'],
 incremental_strategy= "merge"
 ) }}
+
 select * from {{source('datafeed_schema','raw_order')}}  limit 15
