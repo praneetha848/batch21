@@ -1,0 +1,16 @@
+version: 2
+models:
+
+   - name: employees_salary
+     columns:  
+        - name: salary
+          tests:
+            - postive_value_check
+
+   
+   - name: customers
+     columns:
+        - name: id
+          tests:
+               - unique
+               - not_null
